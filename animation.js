@@ -1,7 +1,7 @@
     let config = {
         width: window.innerWidth,
         height: window.innerHeight,
-        backgroundColor: '#ffffff',
+        // backgroundColor: '#ffffff',
         scene: [Scene3], 
         pixelArt: true,
         // scale: {

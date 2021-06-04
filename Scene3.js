@@ -30,16 +30,18 @@ class Scene3 extends Phaser.Scene {
                 { key: 'stars', frame: 'smallStars_5' },
                 { key: 'stars', frame: 'smallStars_6' },
             ],
-            frameRate: 5,
+            frameRate: 3,
             repeat: -1
         });
 
         if (window.innerWidth < 1100) {
             this.stars.displayHeight = 1920;
+            this.stars.displayWidth = 1080;
             this.stars.scaleX = this.stars.scaleY;
         } else {
             this.stars.displayHeight = 1080;
-            this.stars.scaleX = this.stars.scaleY;
+            this.stars.displayWidth = 1920;
+            // this.stars.scaleY = this.stars.scaleX;
         }
         this.stars.alpha = 0.8;
         this.stars.play('shine')
