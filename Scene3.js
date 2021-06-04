@@ -4,9 +4,7 @@ class Scene3 extends Phaser.Scene {
     }
 
     preload() {
-
         let imageUrl = window.innerWidth < 1100 ? 'assets2/main-bg-portrait.png' : 'assets2/main-bg.png'
-        console.log(imageUrl)
         this.load.image('background', imageUrl)
 
         this.load.atlas('stars', 'assets2/star.png', 'star.json')
